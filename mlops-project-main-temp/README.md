@@ -2,12 +2,6 @@
 
 An end-to-end Machine Learning Operations (MLOps) project that demonstrates converting an exploratory Machine Learning Jupyter Notebook into a production-ready, modular, and containerized Flask web application, verified with unit testing, Dockerized via Gunicorn, and deployed to Amazon Web Services (AWS) EC2.
 
-[![GitHub Repository](https://img.shields.io/badge/GitHub-Chari181112%2Fmlops--project-blue?logo=github)](https://github.com/Chari181112/mlops-project)
-[![AWS EC2 Deployed](https://img.shields.io/badge/AWS_EC2-Live_Deployment-FF9900?logo=amazon-aws)](http://13.51.194.56:5000)
-[![Python Version](https://img.shields.io/badge/Python-3.11-brightgreen?logo=python)](https://www.python.org/)
-[![Framework](https://img.shields.io/badge/Framework-Flask-black?logo=flask)](https://flask.palletsprojects.com/)
-[![ML Library](https://img.shields.io/badge/ML-Scikit--Learn-orange?logo=scikitlearn)](https://scikit-learn.org/)
-[![Container](https://img.shields.io/badge/Container-Docker-blue?logo=docker)](https://www.docker.com/)
 
 ---
 
