@@ -295,6 +295,7 @@ git remote set-url origin https://github.com/Chari181112/mlops-project.git
 
 # 6. Push to GitHub
 git push -u origin main
+
 ```
 
 ---
