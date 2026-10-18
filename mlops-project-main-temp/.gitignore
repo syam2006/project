@@ -1,0 +1,10 @@
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+*.pem
+*.key
+scoresense-project.tar.gz
+.ipynb_checkpoints/

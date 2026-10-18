@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScoreSense - Student Marks Predictor</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="card">
+    <h1>ScoreSense - Student Marks Predictor</h1>
+    <p class="sub">Predict exam marks from study habits (Linear Regression)</p>
+    <form method="POST" action="/predict" id="predictionForm">
+      <label for="hours_studied">Hours Studied (per day)
+        <input type="number" step="any" min="0" max="24" id="hours_studied" name="hours_studied" value="{{ form.get('hours_studied','') }}" required>
+      </label>
+      <label for="attendance">Attendance (%)
+        <input type="number" step="any" min="0" max="100" id="attendance" name="attendance" value="{{ form.get('attendance','') }}" required>
+      </label>
+      <label for="previous_marks">Previous Marks (%)
+        <input type="number" step="any" min="0" max="100" id="previous_marks" name="previous_marks" value="{{ form.get('previous_marks','') }}" required>
+      </label>
+      <button type="submit" id="submitBtn">Predict Marks</button>
+    </form>
+    {% if result is not none %}<div class="result">Predicted marks: <b>{{ result }} / 100</b></div>{% endif %}
+    {% if error %}<div class="error">{{ error }}</div>{% endif %}
+  </div>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
